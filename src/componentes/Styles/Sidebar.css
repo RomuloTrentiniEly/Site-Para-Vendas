@@ -1,0 +1,18 @@
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+     color: #3498db; /* Cor do texto */
+     border: none;
+    cursor: pointer;
+  }
+  
+ button:hover{
+  color: #ff6347; /* Nova cor do texto ao passar o mouse */
+ }
+ 

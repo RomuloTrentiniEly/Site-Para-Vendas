@@ -1,0 +1,175 @@
+/* Estiliza o contêiner principal, organizando os elementos em uma coluna */
+.meuComponente {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Contêiner de grid para organizar os elementos em duas colunas */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+  gap: 10px; /* Espaço entre os itens */
+  width: 100%;
+}
+
+/* Contêiner para cada item de grid */
+.gridItem {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contêiner para ícone e texto */
+.DivPadrao {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* Estiliza os ícones */
+.Email, .Name {
+  font-size: 24px; /* Define o tamanho da fonte (e do ícone) */
+  margin-right: 8px; /* Adiciona espaço à direita do ícone */
+}
+
+/* Estiliza os inputs */
+.Inputum {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.Confirmar {
+  width: 20%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Estilo adicional para a nova div */
+.indicacoesContainer {
+  display: flex;
+  justify-content: space-between; /* Espaça os itens uniformemente */
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  padding: 16px 24px;
+  margin-top: 16px;
+  width: 98%; /* Ajusta a largura para ser igual à div com os inputs */
+}
+
+.indicacoesItem, .indicacoesItemFull {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  margin: 0 8px;
+}
+
+.indicacoesTitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.indicacoesValue {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #3498db;
+  font-family: 'Gothem Pro Bold', sans-serif;
+}
+
+.linkContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.form-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.copyButton {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copyButton:hover {
+  background-color: #1d6fa5;
+}
+
+.copyButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+/* Adiciona uma consulta de mídia para ajustar o layout em resoluções menores */
+@media (max-width: 1080px) {
+  .gridContainer {
+    grid-template-columns: 1fr; /* Alinha os itens em uma única coluna */
+  }
+
+  .Confirmar {
+    width: 100%; /* Ajusta o botão para a largura total do contêiner */
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .indicacoesContainer {
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 10px; /* Adiciona espaço entre os itens */
+  }
+}
+
+@media (max-width: 780px) {
+  .gridContainer {
+    grid-template-columns: 1fr; /* Alinha os itens em uma única coluna */
+  }
+
+  .Confirmar {
+    width: 80%; /* Ajusta o botão para a largura total do contêiner */
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .indicacoesContainer {
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 10px; /* Adiciona espaço entre os itens */
+  }
+  input{
+    width:30% ;
+  }
+}
+
+

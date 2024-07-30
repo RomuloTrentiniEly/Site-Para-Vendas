@@ -1,0 +1,236 @@
+html{
+  background: #ecf0f1;
+
+}
+.App {
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  height: 100vh;
+
+  
+}
+
+.Sidebar {
+  color: white;
+}
+
+.header {
+  display: flex;  
+  background-color:  #3498db;
+
+}
+
+.Logo{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  width: 270px;
+}
+.Infos {
+  position: relative; /* Necessário para posicionamento absoluto do botão */
+  background-color: #fff; /* Apenas para visualização */
+  color: #3498db;
+  font-size: 15px;
+  width: 100%;
+  box-shadow: 0 5px 3px black;
+  overflow: hidden; /* Evita que o conteúdo ultrapasse a div */
+  display: flex; /* Use flexbox para alinhamento */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: flex-start; /* Alinha os itens ao início do container */
+}
+
+.um{
+  color: black;
+}
+
+.Infos h3{
+  margin-top: 2%;
+  margin-left: 1%;
+  width: 30%;
+}
+
+.Infos h3 + h3 {
+  margin-top: -1%; /* Ajuste conforme necessário */
+}
+
+.dashboard {
+  flex: 1;
+  padding: 20px;
+  background-color: #ecf0f1;
+  
+
+}
+
+.Sidebar{
+  border: 2px solid #3498db;
+}
+
+.sidebar-item {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: #34495e;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+  background-color: #1abc9c;
+}
+
+
+.Proxy{
+  position: absolute;
+  right: 10px; /* Ajuste conforme necessário */
+  top: 60%;
+  transform: translateY(-50%);
+  color: white;
+  border: 1px solid #3498db; 
+  background-color: #3498db;
+  border-radius: 15px;
+  
+
+}
+.ticker-wrapper {
+  width: 100%; /* Ajuste conforme necessário */
+  overflow: hidden;
+  background-color: black; /* Cor de fundo da fita */
+  color: white; /* Cor do texto */
+  position: relative; /* Necessário para posicionamento absoluto dos itens */
+}
+
+.ticker {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite; /* Ajuste a duração da animação conforme necessário */
+}
+
+.ticker-content {
+  display: flex;
+  flex: 1;
+}
+
+.ticker-item {
+  
+  padding: 0 2rem; /* Espaçamento entre os itens */
+  flex: 0 0 auto; /* Garante que os itens não encolham */
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+  .Infos {
+    position: relative; /* Necessário para posicionamento absoluto do botão */
+    background-color: #fff; /* Apenas para visualização */
+    color: #3498db;
+    font-size: 15px;
+    width: 100%;
+    box-shadow: 0 5px 3px black; 
+  }  
+
+
+@media (max-width: 1100px) {
+
+  .Infos {
+    position: relative; /* Necessário para posicionamento absoluto do botão */
+    background-color: #fff; /* Apenas para visualização */
+    color: #3498db;
+    font-size: 15px;
+    width: 100%;
+    box-shadow: 0 5px 3px black; 
+  }  
+  .Logo{
+    display: none;
+
+  }
+}
+
+@media (max-width: 900px) {
+
+  .Infos {
+    position: relative; /* Necessário para posicionamento absoluto do botão */
+    background-color: #fff; /* Apenas para visualização */
+    color: #3498db;
+    font-size: 15px;
+    width: 100%;
+    box-shadow: 0 5px 3px black; 
+  }  
+}
+@media (max-width: 800px) {
+
+  .Infos {
+    position: relative; /* Necessário para posicionamento absoluto do botão */
+    background-color: #fff; /* Apenas para visualização */
+    color: #3498db;
+    font-size: 15px;
+    width: 100%;
+    box-shadow: 0 5px 3px black; 
+  }  
+}
+
+@media (max-width: 750px) {
+
+  .Infos {
+    position: relative; /* Necessário para posicionamento absoluto do botão */
+    background-color: #fff; /* Apenas para visualização */
+    color: #3498db;
+    font-size: 15px;
+    width: 100%;
+    box-shadow: 0 5px 3px black; 
+  }  
+  
+}
+
+@media (max-width: 650px) {
+
+  .Infos {
+    position: relative; /* Necessário para posicionamento absoluto do botão */
+    background-color: #fff; /* Apenas para visualização */
+    color: #3498db;
+    font-size: 15px;
+    width: 100%;
+    box-shadow: 0 5px 3px black; 
+  }  
+
+  .Logo{
+    display: none;
+   
+
+  }
+  .Sidebar {
+      height: 800px;
+      
+  }
+
+}
+@media (max-width: 600px) {
+
+  .Infos {
+    position: relative; /* Necessário para posicionamento absoluto do botão */
+    background-color: #fff; /* Apenas para visualização */
+    color: #3498db;
+    font-size: 15px;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 5px 3px black; 
+  }  
+
+  .Logo{
+    display: none;
+   
+
+  }
+}
+
+
+
+

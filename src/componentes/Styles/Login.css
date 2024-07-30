@@ -1,0 +1,90 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/backlogin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .login-container:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(0, 0, 0, 0.5); /* Fundo preto com transparência */
+    z-index: -1;
+    border-radius: 10px;
+  }
+  
+  .login-container form {
+        background: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 300px; /* Reduzindo a largura máxima do formulário */
+      }
+  
+  
+  .login-container form h2 {
+    text-align: start;
+    margin-top: 0;
+    color: white; /* Cor branca para o título */
+  }
+  
+  .login-container form div {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .login-container form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-container form button {
+    width: 100%;
+    padding: 12px; /* Reduzindo o padding para diminuir a altura */
+    font-size: 16px; /* Reduzindo o tamanho da fonte */
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaço superior adicional */
+  }
+  
+  .login-container form button:hover {
+    background-color: #2980b9;
+  }
+  
+  .login-container form a {
+    color: white;
+    font-size: 14px; /* Reduzindo o tamanho da fonte do link */
+    text-decoration: none;
+    margin-top: 10px; /* Espaço superior adicional */
+  }
+  
+  .login-container form a:hover {
+    text-decoration: underline;
+  }
+  

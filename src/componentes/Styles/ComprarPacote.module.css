@@ -1,0 +1,542 @@
+/* Estilos padrão */
+
+.BussinesManager {
+    display: flex;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.BussinesManager h1 {
+    margin-top: -10px;
+    color: #0a043c;
+}
+
+.iconBackground {
+    margin-top: -20px;
+}
+
+.profileImageContainer {
+    display: flex;
+    margin-top: 0px;
+}
+
+.ContainersAviso {
+    display: flex;
+}
+
+.Duvidas {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 30px;
+    padding: 7px;
+    border: 1px solid transparent; /* Define uma borda transparente */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra suave */
+}
+
+.Duvidas h4 {
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.Duvidas p {
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.2; /* Ajuste conforme necessário */
+}
+
+.Recarregue {
+    background-color: #3498db;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid transparent; /* Define uma borda transparente */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9); /* Adiciona uma sombra suave */
+}
+
+.MonetizationOnOutlinedIcon {
+    color: white;
+    margin-left: 12%;
+    margin-right: 10px;
+}
+
+.Saldo {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.Saldo p, .Saldo h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.BotaoRecarregar {
+    width: 110%;
+    padding: 5px;
+    font-size: 18px;
+    margin-left: 15%;
+    background-color: white;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listaAnuncios {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.BmsDisponiveis {
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 1.3%;
+    margin-bottom: 1%;
+    max-height: 410px;
+    overflow-x: auto;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0), 
+                0 0 0px rgba(0, 0, 0, 0.9), 
+                0 6px 10px -1px rgba(0, 0, 0, 0.9), 
+                0 4px 8px -1px rgba(0, 0, 0, 0.9);
+}
+
+.anuncio {
+    padding: 7px;
+    margin-left: 6%;
+    width: 89%;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    background: linear-gradient(135deg, #ffffff 0%, #fff9c4 100%);
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anuncio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.anuncio p {
+    margin: 10px 0 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+.adquirir {
+    width: 100%;
+    max-width: 150px; /* Reduzido de 200px para 150px */
+    background-color: #0abb13;
+    padding: 0.5rem 0.75rem; /* Reduzido de 0.75rem 1rem para 0.5rem 0.75rem */
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: white;
+    text-align: center;
+    border-radius: 0.375rem;
+    outline: none;
+    margin-top: -2%;
+    margin-bottom: 3px; /* Mantido para espaçamento */
+}
+
+a {
+    color: green;
+}
+
+.Avisos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.Info {
+    display: flex;
+    margin-left: 93%;
+    margin-top: -5%;
+}
+
+.Aviso {
+    position: relative;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+    background-color: #fffbeb;
+    margin-left: 5%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 1000, 0.5);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    list-style-type: none;
+}
+
+.AvisoHeader {
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.Aviso p {
+    margin-top: -5px;
+    padding-bottom: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Dieritosdereserva {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Dieritosdereserva p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.Dieritosdereserva a {
+    margin: 2%;
+}
+
+.profileInfo {
+    margin-top: -4%;
+}
+
+.profileTitle {
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #0a043c;
+    line-height: 1rem;
+}
+
+.stock, .price {
+    color: #0a043c;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0 0.375rem;
+}
+
+.profileStats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.heatingDays {
+    font-size: 0.75rem;
+    color: #ef4444;
+}
+
+.profileDescription {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #64748b;
+    line-height: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.stock .label, .price .label {
+    color: #64748b;
+}
+
+/* Consulta de mídia para telas de até 1080 pixels */
+@media (max-width: 1280px) {
+    .BussinesManager {
+        display: flex;
+        align-items: center;
+        margin-left: 35%;
+    }
+    
+    .BussinesManager h1 {
+        margin-top: 10px;
+        color: #0a043c;
+    }
+    
+
+    .iconBackground {
+        margin-top: 0;
+    }
+
+    .profileImageContainer {
+        margin-top: 10px; /* Adiciona margem superior para espaçamento */
+    }
+
+    
+    .ContainersAviso {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        align-items: stretch; /* Alinha os itens para ocupar toda a largura */
+    }
+
+    .Duvidas, .Recarregue {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        align-items: stretch; /* Alinha os itens para ocupar toda a largura */
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .Duvidas {
+        margin-bottom: 10px;
+    }
+
+    .Recarregue {
+        margin-bottom: 10px;
+    }
+
+    .MonetizationOnOutlinedIcon {
+        display: none; /* Oculta o ícone em telas menores */
+    }
+
+    .BotaoRecarregar {
+        width: 80%; /* Ajusta o botão para a largura total do contêiner */
+    }
+
+    .listaAnuncios {
+        display: block; /* Exibe os itens da lista em uma coluna */
+        gap: 10px; /* Ajusta o espaço entre os itens */
+    }
+
+    .BmsDisponiveis {
+        max-height: auto; /* Remove a restrição de altura em telas menores */
+        overflow-x: hidden; /* Remove a rolagem horizontal */
+    }
+
+    .anuncio {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%; /* Ajusta o tamanho do anúncio para 70% da largura disponível */
+        justify-content: center;
+    }
+
+    .Aviso {
+        width: 90%; /* Ajusta a largura do aviso em telas menores */
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+    .AvisoHeader {
+        margin-left: 0; /* Remove o margin-left em telas menores */
+    }
+
+    .Info {
+            display: flex;
+            margin-left: 90%;
+            
+        
+    }
+}
+
+@media (max-width: 900px) {
+    .BussinesManager {
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+    }
+    
+    .BussinesManager h1 {
+        margin-top: 10px;
+        color: #0a043c;
+    }
+    .iconBackground {
+        margin-top: 0;
+    }
+
+    .profileImageContainer {
+        margin-top: 10px; /* Adiciona margem superior para espaçamento */
+    }
+
+    .ContainersAviso {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        align-items: stretch; /* Alinha os itens para ocupar toda a largura */
+    }
+
+    .Duvidas, .Recarregue {
+        width: 90%; /* Ajusta a largura para 100% em telas menores */
+        margin-left: 2%;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .Duvidas {
+        margin-bottom: 10px;
+    }
+
+    .Recarregue {
+        margin-bottom: 10px;
+    }
+
+    .MonetizationOnOutlinedIcon {
+        display: none; /* Oculta o ícone em telas menores */
+    }
+
+    .BotaoRecarregar {
+        width: 80%; /* Ajusta o botão para a largura total do contêiner */
+        margin-left: 10%;
+    }
+
+    .listaAnuncios {
+        display: block; /* Exibe os itens da lista em uma coluna */
+        gap: 10px; /* Ajusta o espaço entre os itens */
+    }
+
+    .BmsDisponiveis {
+        max-height: auto; /* Remove a restrição de altura em telas menores */
+        overflow-x: hidden; /* Remove a rolagem horizontal */
+    }
+
+    .anuncio {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%; /* Ajusta o tamanho do anúncio para 70% da largura disponível */
+        justify-content: center;
+    }
+
+    .Aviso {
+        width: 90%; /* Ajusta a largura do aviso em telas menores */
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+    .AvisoHeader {
+        margin-left: 0; /* Remove o margin-left em telas menores */
+    }
+
+    .Info {
+        margin-left: 82%;
+        margin-top: -10%;
+    }
+    .adquirir{
+        width: 30%;
+        margin-top: 10px;
+    }
+   
+}
+
+@media (max-width: 700px) {
+    .dashboardIcon {
+        display: none;
+      }
+    .BussinesManager {
+        margin-left: 10%; /* Ajusta o margin para um valor mais razoável em telas menores */
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        align-items: flex-start;
+    }
+
+    .BussinesManager h1 {
+        margin-top: 0;
+    }
+
+    .iconBackground {
+        margin-top: 0;
+    }
+
+    .profileImageContainer {
+       margin-bottom: 10px;
+        margin-top: 5px; /* Adiciona margem superior para espaçamento */
+    }
+
+    .ContainersAviso {
+        flex-direction: column; /* Alinha os itens em uma coluna */
+        align-items: stretch; /* Alinha os itens para ocupar toda a largura */
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    
+    }
+
+    .Duvidas, .Recarregue {
+        width: 90%; /* Ajusta a largura para 100% em telas menores */
+        margin-left: 2%;
+        margin-right: 0;
+        padding: 10px;
+        
+    }
+
+    .Duvidas {
+        margin-bottom: 10px;
+    }
+
+    .Recarregue {
+        margin-bottom: 10px;
+    }
+
+    .MonetizationOnOutlinedIcon {
+        display: none; /* Oculta o ícone em telas menores */
+    }
+
+    .BotaoRecarregar {
+        width: 85%; /* Ajusta o botão para a largura total do contêiner */
+        margin-left: 10%;
+        font-size: 80%;
+    }
+
+    .listaAnuncios {
+        display: block; /* Exibe os itens da lista em uma coluna */
+        gap: 10px; /* Ajusta o espaço entre os itens */
+    }
+
+    .BmsDisponiveis {
+        max-height: auto; /* Remove a restrição de altura em telas menores */
+        overflow-x: hidden; /* Remove a rolagem horizontal */
+    }
+
+    .anuncio {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%; /* Ajusta o tamanho do anúncio para 70% da largura disponível */
+        justify-content: center;
+    }
+
+    .Aviso {
+        width: 90%; /* Ajusta a largura do aviso em telas menores */
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+    .AvisoHeader {
+        margin-left: 0; /* Remove o margin-left em telas menores */
+    }
+
+    .Info {
+        margin-left: 68%;
+        margin-top: -40%;
+    }
+    .adquirir{
+        background-color: transparent;
+        color: green;
+        width: 30%;
+        margin-top: 10px;
+        margin-left: -30%;
+    }
+    span{
+        font-size: 10px;
+    }
+   
+}

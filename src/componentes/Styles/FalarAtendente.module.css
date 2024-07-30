@@ -1,0 +1,85 @@
+/* FalarAtendente.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formColumns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre as colunas */
+}
+
+.formColumn {
+    flex: 1;
+    min-width: 300px; /* Largura mínima para colunas */
+}
+
+.formGroup {
+    margin-bottom: 20px; /* Aumentar o espaçamento entre os grupos de formulário */
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Destacar os rótulos dos inputs */
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    padding: 12px; /* Aumentar o padding para maior área clicável */
+    border: 2px solid black; /* Bordas mais visíveis */
+    border-radius: 6px; /* Borda arredondada mais visível */
+    background-color: #fff; /* Fundo branco para maior contraste */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave */
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    border-color: #3498db; /* Cor da borda ao focar */
+    box-shadow: 0 0 5px black(0, 0, 255, 0.2); /* Adicionar sombra ao focar */
+    outline: none; /* Remover o outline padrão do navegador */
+}
+
+.submitButton {
+    padding: 12px 24px; /* Ajustar o padding para maior área clicável */
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px; /* Borda arredondada mais visível */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Centraliza o botão */
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
+
+.confirmation {
+    font-size: 18px;
+    color: #28a745;
+    text-align: center;
+}
